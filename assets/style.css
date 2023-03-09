@@ -18,6 +18,29 @@
 /* Main */
 body {
     background-color: black;
+    position: relative;
+}
+
+/* Buttons for speaker view and resize window */
+
+.window-btns {
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.spkr {
+    background-color: var(--grey);
+    padding: 0.2em 0.5em 0.2em;
+    border-radius: 0.3em;
+    margin-right: 0.3em;
+}
+
+.fa-maximize {
+    background-color: var(--grey);
+    padding: 0.2em 0.2em 0.2em;
+    border-radius: 0.3em;
 }
 
 /*Videocall area */
