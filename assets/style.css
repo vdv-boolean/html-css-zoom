@@ -36,7 +36,16 @@ body {
     height: 12vh;
     aspect-ratio: 16/9;
     margin: 1em 1em 1em;
+    position: relative;
+}
 
+.info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    background-color: var(--grey);
+    padding: 0.3em 0.3em 0.3em;
 }
 
 /* Buttons area */
@@ -121,7 +130,7 @@ nav > div {
 
 /*Texts and backgrounds */
 
-span {
+nav span {
     position: absolute;
     bottom: 5%;
     left: 10%;
