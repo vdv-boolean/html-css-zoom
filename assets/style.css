@@ -17,7 +17,7 @@
 
 /* Main */
 body {
-    background-color: var(--black);
+    background-color: black;
 }
 .videocall {
     width: 100%;
@@ -28,7 +28,7 @@ body {
 .call-bts {
     width: 100vw;
     height: 80px;
-    background-color: var(--grey);
+    background-color: var(--back);
     position:fixed;
     bottom: 0;
     left: 0;
@@ -48,13 +48,15 @@ nav {
     height: 100%;
     display: flex;
     justify-content: space-between;
+    background-color: var(--black);
 }
 
 nav > div {
     height: 100%;
     display: flex;
 }
-.mic {
+
+.btn {
     height: 100%;
     width: 80px;
     /* background-color: red; */
@@ -62,13 +64,41 @@ nav > div {
     position: relative;
 }
 
-.fa-microphone {
+.btn-large {
+    width: 120px;
+}
+
+.btn-xl {
+    width: 150px;
+}
+
+.btn .icon {
     position: absolute;
     top: 50%;
     left: 20%;
     transform: translateY(-80%);
     font-size: 2em;
 }
+
+.btn-large .icon {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateY(-80%);
+    font-size: 2em;
+}
+
+.btn-xl .icon {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translateY(-80%);
+    font-size: 2em;
+}
+.green {
+    color: var(--green);
+}
+
 span {
     position: absolute;
     bottom: 5%;
@@ -81,4 +111,16 @@ span {
     top: 50%;
     right: 5%;
     transform: translateY(-80%);
+}
+
+.close-call {
+    background-color: var(--grey);
+}
+
+.close-call span {
+    color: var(--red);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
